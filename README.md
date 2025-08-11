@@ -17,7 +17,8 @@
   - [3.3 Azure Policy](#33-azure-policy)  
   - [3.4 Defender for Cloud](#34-defender-for-cloud)  
   - [3.5 Azure Sentinel (SIEM/SOAR)](#35-azure-sentinel-siemssoar)  
-- [4. References](#4-references)
+- [4. Pricing Comparison](#4-Pricing Comparison)
+- [5. References](#5-references)
 
 ---
 
@@ -185,8 +186,27 @@ This report identifies Amazon Web Services (AWS) and Google Cloud Platform (GCP)
   Supports automated workflows for incident handling and remediation.
 
 ---
+## 4. Pricing Comparison
 
-## 4. References
+| Service                  | Azure Pricing Summary                                           | AWS Pricing Summary                                           | GCP Pricing Summary                                            |
+|--------------------------|----------------------------------------------------------------|---------------------------------------------------------------|----------------------------------------------------------------|
+| **Azure Active Directory (AAD)** | Free tier for basic features; Premium P1 $6/user/month, Premium P2 $9/user/month | IAM is free; AWS Cognito charges ~$0.0055 per monthly active user (MAU) | IAM free; Identity Platform charges ~$0.0055 per MAU            |
+| **Azure Monitor & Log Analytics** | Charges based on data ingested (~$2.30 per GB) and retention | CloudWatch charges per custom metric (~$0.30 per metric/month), logs ingestion (~$0.50 per GB) | Operations Suite charges per GB ingested (logs ~$0.50/GB), metrics free up to limits |
+| **Azure Policy**          | Generally free; charges may apply for advanced features or high volume | AWS Config charges ~$0.003 per configuration item recorded; SCPs free | Organization Policy free; Policy Intelligence free; charges apply for related logging |
+| **Defender for Cloud**    | Charges per resource protected (e.g., $15 per node per month) | AWS Security Hub charges $0.001 per security finding; GuardDuty ~$4 per million events | Security Command Center standard tier is free; premium tier pricing upon request |
+| **Azure Sentinel**        | Charges based on data ingested (starting at ~$2.46 per GB) and retention | AWS Security Hub free for first 10,000 events, then $0.001 per event; Detective and GuardDuty priced separately | Chronicle pricing based on ingestion volume; pricing available upon request |
+
+---
+
+### Notes:
+
+- Pricing varies significantly by region, volume, and usage pattern.  
+- Most services offer free tiers with limited usage.  
+- Detailed pricing is available on each provider's official pricing pages (links below).
+
+---
+
+## 5. References
 
 - [Microsoft Azure Documentation](https://docs.microsoft.com/en-us/azure/)  
 - [AWS Documentation](https://docs.aws.amazon.com/)  
@@ -195,6 +215,27 @@ This report identifies Amazon Web Services (AWS) and Google Cloud Platform (GCP)
 - [Azure Sentinel](https://azure.microsoft.com/en-us/services/azure-sentinel/)  
 - [Kusto Query Language (KQL)](https://docs.microsoft.com/en-us/azure/data-explorer/kusto/query/)  
 - [Auth0 Flask Integration](https://auth0.com/docs/quickstart/webapp/python)
+
+- [Azure Active Directory Pricing](https://azure.microsoft.com/en-us/pricing/details/active-directory/)  
+- [AWS IAM Pricing](https://aws.amazon.com/iam/pricing/) & [AWS Cognito Pricing](https://aws.amazon.com/cognito/pricing/)  
+- [Google Cloud IAM Pricing](https://cloud.google.com/identity/pricing) & [Identity Platform Pricing](https://cloud.google.com/identity-platform/pricing)  
+
+- [Azure Monitor Pricing](https://azure.microsoft.com/en-us/pricing/details/monitor/)  
+- [AWS CloudWatch Pricing](https://aws.amazon.com/cloudwatch/pricing/)  
+- [Google Cloud Operations Suite Pricing](https://cloud.google.com/stackdriver/pricing)  
+
+- [Azure Policy Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-policy/)  
+- [AWS Config Pricing](https://aws.amazon.com/config/pricing/)  
+- [Google Cloud Organization Policy Pricing](https://cloud.google.com/resource-manager/docs/organization-policy/overview)  
+
+- [Defender for Cloud Pricing](https://azure.microsoft.com/en-us/pricing/details/defender-for-cloud/)  
+- [AWS Security Hub Pricing](https://aws.amazon.com/security-hub/pricing/)  
+- [Google Cloud Security Command Center Pricing](https://cloud.google.com/security-command-center/pricing)  
+
+- [Azure Sentinel Pricing](https://azure.microsoft.com/en-us/pricing/details/azure-sentinel/)  
+- [AWS GuardDuty Pricing](https://aws.amazon.com/guardduty/pricing/)  
+- [Google Chronicle Pricing](https://cloud.google.com/chronicle/pricing)  
+
 
 ---
 
