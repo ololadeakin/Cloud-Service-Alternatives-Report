@@ -17,7 +17,7 @@
   - [3.3 Azure Policy](#33-azure-policy)  
   - [3.4 Defender for Cloud](#34-defender-for-cloud)  
   - [3.5 Azure Sentinel (SIEM/SOAR)](#35-azure-sentinel-siemssoar)  
-- [4. Pricing Comparison](#4-Pricing Comparison)
+- [4. Pricing Comparison](#4-Pricing-Comparison)
 - [5. References](#5-references)
 
 ---
